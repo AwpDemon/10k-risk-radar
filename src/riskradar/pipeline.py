@@ -2,6 +2,7 @@
 can be re-run independently (and the expensive ones are cached)."""
 from __future__ import annotations
 
+import json
 import logging
 import re
 from collections import namedtuple
@@ -143,4 +144,70 @@ def stage_segment() -> pd.DataFrame:
     df = pd.DataFrame(rows)
     df.to_parquet(interim(RISK_FACTORS), index=False)
     log.info("segmented %d risk factors from %d sections", len(df), int(sections.ok.sum()))
+    return df
+
+
+CLASSIFICATIONS = "classifications.parquet"
+DIFFS = "diffs.parquet"
+EMBEDDINGS = "embeddings.npy"
+
+
+def stage_classify(model: str | None = None, few_shot: bool = True, workers: int = 4,
+                   limit: int | None = None) -> pd.DataFrame:
+    """Classify every risk factor with the configured LLM (cached, so re-runs are free)."""
+    import time
+
+    from .classify.llm_classifier import PROMPT_VERSION, classify_many
+    from .eval_harness import load_few_shot
+    from .llm import LLMClient
+
+    rf = pd.read_parquet(interim(RISK_FACTORS))
+    if limit:
+        rf = rf.head(limit)
+    client = LLMClient()
+    model = model or client.settings.model
+    t0 = time.perf_counter()
+    res = classify_many(client, list(zip(rf.heading, rf.body)), shots=load_few_shot() if few_shot else None,
+                        model=model, workers=workers)
+    wall = time.perf_counter() - t0
+    out = pd.DataFrame({
+        "rf_id": rf.rf_id, "model": model, "prompt": ("few_shot" if few_shot else "zero_shot") + ":" + PROMPT_VERSION,
+        "primary": [r.primary for r in res], "secondary": [";".join(r.secondary) for r in res],
+        "severity": [r.severity for r in res], "ai_related": [r.ai_related for r in res],
+        "valid": [r.valid for r in res], "latency_s": [r.latency_s for r in res],
+        "prompt_tokens": [r.prompt_tokens for r in res], "completion_tokens": [r.completion_tokens for r in res],
+        "cached": [r.cached for r in res],
+    })
+    out.to_parquet(interim(CLASSIFICATIONS), index=False)
+    n_new = int((~out.cached).sum())
+    log.info("classified %d risk factors with %s (%d new calls, wall %.0fs, invalid %.2f%%)",
+             len(out), model, n_new, wall, 100 * (1 - out.valid.mean()))
+    if n_new:
+        (config.RESULTS / "classify_run.json").write_text(json.dumps({
+            "model": model, "n_items": len(out), "new_calls": n_new, "workers": workers,
+            "wall_seconds": wall, "items_per_second": n_new / wall,
+            "n_filings": int(rf.accession.nunique()),
+        }, indent=2))
+    return out
+
+
+def embed_all(rf: pd.DataFrame) -> dict:
+    from .llm import EmbeddingClient
+
+    emb = EmbeddingClient()
+    texts = [h + "\n" + b[:1500] for h, b in zip(rf.heading, rf.body)]
+    X = emb.embed(texts, prefix="clustering: ")
+    return dict(zip(rf.rf_id, X))
+
+
+def stage_diff() -> pd.DataFrame:
+    """Year-over-year matching of risk factors within each company."""
+    from .diff import diff_company
+
+    rf = pd.read_parquet(interim(RISK_FACTORS))
+    emb = embed_all(rf)
+    parts = [diff_company(g, emb) for _, g in tqdm(rf.groupby("ticker"), desc="diff")]
+    df = pd.concat(parts, ignore_index=True)
+    df.to_parquet(interim(DIFFS), index=False)
+    log.info("diff: %s", df.change.value_counts().to_dict())
     return df

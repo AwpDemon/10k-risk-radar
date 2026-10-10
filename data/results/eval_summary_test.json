@@ -1,0 +1,172 @@
+{
+  "split": "test",
+  "n_items": 180,
+  "best_by_macro_f1": "zero_shot:qwen2.5:14b-instruct",
+  "table": {
+    "keyword": {
+      "n": 180,
+      "accuracy": 0.7222222222,
+      "macro_f1": 0.7503773414,
+      "micro_f1": 0.7222222222,
+      "kappa": 0.6931469485,
+      "lenient_accuracy": 0.8166666667,
+      "macro_f1_ci_low": 0.666614439,
+      "macro_f1_ci_high": 0.8001100757,
+      "invalid_output_rate": null,
+      "mean_latency_s": null,
+      "p95_latency_s": null,
+      "mean_prompt_tokens": null,
+      "mean_completion_tokens": null,
+      "prompt_version": null
+    },
+    "embed_lr": {
+      "n": 180,
+      "accuracy": 0.8,
+      "macro_f1": 0.7471516099,
+      "micro_f1": 0.8,
+      "kappa": 0.77924644,
+      "lenient_accuracy": 0.8833333333,
+      "macro_f1_ci_low": 0.6850472643,
+      "macro_f1_ci_high": 0.8447407917,
+      "invalid_output_rate": null,
+      "mean_latency_s": null,
+      "p95_latency_s": null,
+      "mean_prompt_tokens": null,
+      "mean_completion_tokens": null,
+      "prompt_version": null
+    },
+    "zero_shot:qwen2.5:7b-instruct": {
+      "n": 180,
+      "accuracy": 0.8,
+      "macro_f1": 0.8116188178,
+      "micro_f1": 0.8,
+      "kappa": 0.7798464361,
+      "lenient_accuracy": 0.8722222222,
+      "macro_f1_ci_low": 0.7260570025,
+      "macro_f1_ci_high": 0.8619645581,
+      "invalid_output_rate": 0.0,
+      "mean_latency_s": 0.9781236261,
+      "p95_latency_s": 1.11248339,
+      "mean_prompt_tokens": 1889.0722222222,
+      "mean_completion_tokens": 58.75,
+      "prompt_version": "v3"
+    },
+    "few_shot:qwen2.5:7b-instruct": {
+      "n": 180,
+      "accuracy": 0.8166666667,
+      "macro_f1": 0.8361553776,
+      "micro_f1": 0.8166666667,
+      "kappa": 0.7981651376,
+      "lenient_accuracy": 0.8777777778,
+      "macro_f1_ci_low": 0.7580199395,
+      "macro_f1_ci_high": 0.8802221142,
+      "invalid_output_rate": 0.0166666667,
+      "mean_latency_s": 1.721266285,
+      "p95_latency_s": 2.500337135,
+      "mean_prompt_tokens": 4040.7722222222,
+      "mean_completion_tokens": 45.5833333333,
+      "prompt_version": "v3"
+    },
+    "zero_shot:qwen2.5:14b-instruct": {
+      "n": 180,
+      "accuracy": 0.9,
+      "macro_f1": 0.9103832022,
+      "micro_f1": 0.9,
+      "kappa": 0.8896457766,
+      "lenient_accuracy": 0.9555555556,
+      "macro_f1_ci_low": 0.8574097502,
+      "macro_f1_ci_high": 0.944256362,
+      "invalid_output_rate": 0.0055555556,
+      "mean_latency_s": 2.102699945,
+      "p95_latency_s": 2.5191247299,
+      "mean_prompt_tokens": 1889.0722222222,
+      "mean_completion_tokens": 72.8111111111,
+      "prompt_version": "v3"
+    },
+    "few_shot:qwen2.5:14b-instruct": {
+      "n": 180,
+      "accuracy": 0.8722222222,
+      "macro_f1": 0.8937881771,
+      "micro_f1": 0.8722222222,
+      "kappa": 0.8593319969,
+      "lenient_accuracy": 0.9,
+      "macro_f1_ci_low": 0.8321655011,
+      "macro_f1_ci_high": 0.9281820998,
+      "invalid_output_rate": 0.0166666667,
+      "mean_latency_s": 4.0844843378,
+      "p95_latency_s": 5.4998965399,
+      "mean_prompt_tokens": 4040.7722222222,
+      "mean_completion_tokens": 47.3722222222,
+      "prompt_version": "v3"
+    }
+  },
+  "paired_bootstrap": {
+    "zero_shot:qwen2.5:14b-instruct vs keyword": {
+      "mean_diff": 0.1686897200849949,
+      "p_a_better": 1.0,
+      "ci_low": 0.10429094493572269,
+      "ci_high": 0.23413952046162056
+    },
+    "zero_shot:qwen2.5:14b-instruct vs embed_lr": {
+      "mean_diff": 0.14222762190038082,
+      "p_a_better": 1.0,
+      "ci_low": 0.05701740271404667,
+      "ci_high": 0.22115453620943148
+    },
+    "zero_shot:qwen2.5:14b-instruct vs zero_shot:qwen2.5:7b-instruct": {
+      "mean_diff": 0.10471907690133517,
+      "p_a_better": 0.999,
+      "ci_low": 0.04050900557192516,
+      "ci_high": 0.178234484656632
+    },
+    "zero_shot:qwen2.5:14b-instruct vs few_shot:qwen2.5:7b-instruct": {
+      "mean_diff": 0.07966491747192632,
+      "p_a_better": 0.994,
+      "ci_low": 0.02177614453103502,
+      "ci_high": 0.14389393420142862
+    },
+    "zero_shot:qwen2.5:14b-instruct vs few_shot:qwen2.5:14b-instruct": {
+      "mean_diff": 0.01677686081794745,
+      "p_a_better": 0.737,
+      "ci_low": -0.03328151995608831,
+      "ci_high": 0.07338073672197953
+    }
+  },
+  "timing": {
+    "keyword": {
+      "seconds_per_item": 0.007576186250662431
+    },
+    "embed_lr": {
+      "seconds_per_item": 0.00625303958368022,
+      "note": "embedding time (cached after first run) + CV fit"
+    }
+  },
+  "severity_inter_model": {
+    "zero_shot": {
+      "quadratic_kappa": 0.1844349680170576,
+      "exact_agreement": 0.6111111111111112,
+      "n": 180
+    },
+    "few_shot": {
+      "quadratic_kappa": 0.5687960687960688,
+      "exact_agreement": 0.7833333333333333,
+      "n": 180
+    }
+  },
+  "label_distribution": {
+    "regulatory_legal": 27,
+    "liquidity_capital": 24,
+    "competition_strategy": 22,
+    "operational_people": 18,
+    "macro_geopolitical": 14,
+    "cyber_tech": 13,
+    "credit": 13,
+    "market_interest_rate": 12,
+    "other": 12,
+    "climate_catastrophe": 8,
+    "reserving_underwriting": 7,
+    "ai_model": 5,
+    "reinsurance": 4,
+    "pandemic_health": 1
+  }
+}
