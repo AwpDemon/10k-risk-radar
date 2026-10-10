@@ -1,0 +1,240 @@
+0|reserving_underwriting|regulatory_legal|1|premium-rate approval is regulated; driver is pricing adequacy
+1|cyber_tech|competition_strategy|1|technology/analytics change
+2|credit||1|
+3|market_interest_rate|macro_geopolitical|1|FX translation
+4|operational_people||1|
+5|other|competition_strategy|1|earnings volatility, no single driver
+6|other||1|accounting estimates
+7|regulatory_legal|other|1|accounting standards changes
+8|reserving_underwriting|other|1|actuarial assumptions drive DAC
+9|credit||1|
+10|operational_people||1|
+11|regulatory_legal|liquidity_capital|1|
+12|regulatory_legal||1|
+13|competition_strategy|other|1|long-term strategy vs short-term results
+14|operational_people|ai_model|1|risk-management processes; models in body
+15|credit|market_interest_rate|1|
+16|operational_people|macro_geopolitical|1|
+17|macro_geopolitical|market_interest_rate|1|
+18|operational_people||1|
+19|competition_strategy||1|reputation
+20|reserving_underwriting||1|
+21|liquidity_capital|regulatory_legal|1|
+22|competition_strategy||1|
+23|operational_people||1|
+24|competition_strategy||1|brand
+25|regulatory_legal||1|
+26|regulatory_legal|competition_strategy|1|tort reform reduces demand
+27|climate_catastrophe||1|
+28|operational_people||1|
+29|macro_geopolitical|regulatory_legal|1|sanctions compliance in body
+30|cyber_tech|operational_people|1|systems + third-party providers
+31|credit|climate_catastrophe|1|mortgage concentration; cat in body
+32|liquidity_capital|market_interest_rate|1|
+33|competition_strategy||1|M&A
+34|reinsurance||1|
+35|regulatory_legal||1|
+36|operational_people||1|
+37|liquidity_capital|competition_strategy|1|ratings
+38|liquidity_capital||1|ratings
+39|competition_strategy||1|
+40|regulatory_legal||1|litigation
+41|climate_catastrophe||1|
+42|ai_model|reserving_underwriting|1|model risk
+43|competition_strategy||1|distribution
+44|cyber_tech|regulatory_legal|1|data privacy
+45|climate_catastrophe||1|
+46|reinsurance|credit|1|
+47|competition_strategy||1|pricing pressure from electronic trading
+48|credit||1|
+49|reinsurance|credit|1|
+50|regulatory_legal||1|
+51|regulatory_legal||1|
+52|operational_people|reserving_underwriting|1|fraud
+53|competition_strategy||1|reputation
+54|liquidity_capital||1|
+55|credit|macro_geopolitical|1|
+56|macro_geopolitical|regulatory_legal|1|government/political action in emerging markets
+57|macro_geopolitical|regulatory_legal|1|country risk of global operations
+58|regulatory_legal||1|E&O liability claims against broker
+59|market_interest_rate|credit|1|residual value = asset-price risk; ambiguous
+60|market_interest_rate|liquidity_capital|1|asset values / fair value
+61|other|market_interest_rate|1|goodwill impairment
+62|macro_geopolitical|climate_catastrophe;regulatory_legal|1|geographic concentration; mixed drivers
+63|ai_model||1|
+64|regulatory_legal|other|1|accounting standards changes
+65|market_interest_rate|reserving_underwriting|1|hedging of guarantees
+66|liquidity_capital|credit|1|
+67|pandemic_health||1|
+68|competition_strategy||1|reputation
+69|other|credit|1|valuation judgments = accounting estimates
+70|macro_geopolitical|market_interest_rate|1|sovereign default
+71|credit|market_interest_rate|1|
+72|competition_strategy|regulatory_legal|1|intellectual property; ambiguous
+73|climate_catastrophe||1|
+74|macro_geopolitical||1|inflation as economic condition
+75|other|market_interest_rate|1|valuation methodology = accounting estimates
+76|competition_strategy||1|M&A
+77|cyber_tech|competition_strategy|1|IT upgrades / digital
+78|liquidity_capital||1|
+79|competition_strategy||1|
+80|cyber_tech||1|
+81|regulatory_legal||1|tax
+82|operational_people|competition_strategy|1|
+83|competition_strategy|cyber_tech|1|
+84|market_interest_rate|regulatory_legal|1|monetary policy -> rates
+85|market_interest_rate||1|FX
+86|cyber_tech|competition_strategy|1|technology/data/analytics capability
+87|liquidity_capital||1|
+88|regulatory_legal||1|
+89|operational_people||1|
+90|liquidity_capital||1|
+91|liquidity_capital|macro_geopolitical|1|
+92|credit|market_interest_rate|1|
+93|ai_model|operational_people|1|
+94|regulatory_legal||1|
+95|cyber_tech||1|
+96|operational_people||1|
+97|macro_geopolitical|reserving_underwriting|1|
+98|liquidity_capital|market_interest_rate|1|
+99|liquidity_capital||1|ratings
+100|credit||1|
+101|regulatory_legal|other|1|environmental liability of refined-coal investments
+102|competition_strategy||1|intellectual property
+103|competition_strategy|reserving_underwriting|1|underwriting cycle driven by capacity/price competition
+104|other||1|accounting estimates
+105|competition_strategy|regulatory_legal|1|Mercer pension-consulting exposure; ambiguous
+106|market_interest_rate|credit|1|
+107|market_interest_rate||1|
+108|operational_people||1|
+109|liquidity_capital|market_interest_rate|1|
+110|cyber_tech|regulatory_legal;ai_model|1|privacy/AI/cyber regulation
+111|cyber_tech||1|
+112|market_interest_rate|liquidity_capital|1|private LP valuation/illiquidity
+113|other||1|stock price
+114|competition_strategy||1|M&A
+115|liquidity_capital||1|debt covenants
+116|cyber_tech||1|
+117|liquidity_capital||1|
+118|liquidity_capital|regulatory_legal|1|
+119|liquidity_capital||1|
+120|regulatory_legal|other|1|resolution regime / TLAC
+121|credit||1|
+122|reserving_underwriting|market_interest_rate|1|product guarantees
+123|operational_people||1|risk-management processes
+124|credit||1|
+125|regulatory_legal||1|
+126|market_interest_rate|credit|1|
+127|climate_catastrophe||1|terrorism
+128|regulatory_legal||1|
+129|liquidity_capital||1|
+130|macro_geopolitical|market_interest_rate|1|
+131|regulatory_legal||1|
+132|climate_catastrophe||1|
+133|regulatory_legal|macro_geopolitical|1|sanctions
+134|macro_geopolitical|market_interest_rate|1|
+135|reinsurance|credit|1|
+136|reserving_underwriting||1|
+137|competition_strategy||1|
+138|competition_strategy||1|deal completion
+139|competition_strategy||1|intellectual property
+140|regulatory_legal||1|
+141|regulatory_legal||1|
+142|credit|macro_geopolitical|1|
+143|market_interest_rate|regulatory_legal|1|bundle of business-line risks; ambiguous
+144|other||1|anti-takeover
+145|regulatory_legal||1|
+146|operational_people|climate_catastrophe;cyber_tech|1|business continuity
+147|pandemic_health||1|
+148|macro_geopolitical||1|country risk
+149|macro_geopolitical|reserving_underwriting|1|
+150|regulatory_legal|competition_strategy|1|government program changes
+151|liquidity_capital|competition_strategy|1|ratings
+152|competition_strategy||1|reputation
+153|ai_model|reserving_underwriting|1|model risk
+154|competition_strategy|regulatory_legal|1|ILS/third-party capital business line; ambiguous
+155|competition_strategy||1|
+156|other||1|anti-takeover
+157|regulatory_legal|other|1|tax-credit investments
+158|ai_model|reserving_underwriting|1|model risk
+159|operational_people||1|business continuity
+160|cyber_tech|competition_strategy|1|technology change
+161|regulatory_legal||1|
+162|liquidity_capital||1|
+163|reserving_underwriting|climate_catastrophe|1|exposure management
+164|ai_model||1|model risk
+165|macro_geopolitical||1|
+166|competition_strategy||1|intellectual property
+167|reserving_underwriting||1|closed block
+168|liquidity_capital|competition_strategy|1|ratings
+169|competition_strategy||1|M&A integration
+170|cyber_tech||1|
+171|other|credit|1|valuation judgments = accounting estimates
+172|reserving_underwriting||1|
+173|climate_catastrophe|credit|1|
+174|regulatory_legal||1|
+175|regulatory_legal||1|tax
+176|regulatory_legal|other|1|accounting standards
+177|competition_strategy||1|M&A
+178|liquidity_capital||1|
+179|climate_catastrophe||1|
+180|liquidity_capital||1|ratings
+181|operational_people||1|
+182|liquidity_capital|regulatory_legal|1|ability to maintain required capital
+183|competition_strategy||1|new products
+184|competition_strategy||1|M&A / ventures
+185|regulatory_legal|other|1|resolution regime
+186|liquidity_capital|regulatory_legal|1|
+187|macro_geopolitical||1|
+188|operational_people|cyber_tech|1|
+189|macro_geopolitical||1|inflation
+190|climate_catastrophe|competition_strategy|1|sustainability/ESG scrutiny
+191|operational_people|cyber_tech|1|
+192|competition_strategy||1|M&A
+193|regulatory_legal||1|tax
+194|other|credit|1|credit-loss estimates = accounting judgment
+195|competition_strategy||1|
+196|operational_people||1|
+197|macro_geopolitical|market_interest_rate|1|
+198|competition_strategy|regulatory_legal|1|intellectual property
+199|competition_strategy||1|distribution
+200|credit||1|
+201|competition_strategy||1|
+202|competition_strategy|cyber_tech|1|
+203|climate_catastrophe||1|
+204|market_interest_rate|macro_geopolitical|1|FX
+205|liquidity_capital|regulatory_legal|1|maintaining capital
+206|reserving_underwriting||1|surety losses
+207|regulatory_legal||1|
+208|regulatory_legal||1|
+209|credit||1|
+210|liquidity_capital||1|
+211|other||1|dividend policy
+212|liquidity_capital|market_interest_rate|1|collateral calls
+213|market_interest_rate|reserving_underwriting|1|
+214|liquidity_capital||1|debt covenants
+215|operational_people|macro_geopolitical|1|
+216|credit||1|
+217|operational_people||1|internal controls over reporting
+218|other|market_interest_rate|1|goodwill
+219|competition_strategy||1|intellectual property
+220|market_interest_rate||1|
+221|cyber_tech|ai_model|1|tech change incl. AI as an example; ambiguous
+222|credit||1|collateral
+223|regulatory_legal||1|
+224|operational_people|cyber_tech|1|vendors
+225|market_interest_rate||1|FX
+226|competition_strategy||1|distribution
+227|other||1|accounting estimates
+228|market_interest_rate||1|
+229|market_interest_rate|liquidity_capital|1|pension
+230|liquidity_capital||1|
+231|operational_people|competition_strategy|1|
+232|climate_catastrophe|competition_strategy|1|sustainability/ESG scrutiny
+233|competition_strategy||1|M&A
+234|operational_people|competition_strategy|1|
+235|other|regulatory_legal|1|shareholder tax (CFC)
+236|regulatory_legal||1|
+237|cyber_tech||1|
+238|market_interest_rate||1|performance fees depend on markets
+239|cyber_tech|regulatory_legal|1|data-privacy regulation

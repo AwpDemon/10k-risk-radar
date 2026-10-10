@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "riskradar"
+version = "0.1.0"
+description = "10-K Risk Radar: extract, classify, and diff Item 1A risk factors from SEC EDGAR filings with LLMs, with an evaluation harness."
+requires-python = ">=3.11"
+readme = "README.md"
+license = { text = "MIT" }
+
+[project.scripts]
+riskradar = "riskradar.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

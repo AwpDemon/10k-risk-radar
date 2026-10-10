@@ -1,0 +1,53 @@
+# Analysis universe: US-listed insurers, insurance brokers, and banks that file 10-Ks with the SEC.
+# Selected for coverage of the four sub-sectors (not a random sample, not an index).
+# CIKs are resolved from SEC's company_tickers.json at fetch time.
+fiscal_years: [2022, 2023, 2024, 2025]
+companies:
+  # --- Property & casualty insurers ---
+  - {ticker: TRV,  sector: "P&C insurer"}
+  - {ticker: ALL,  sector: "P&C insurer"}
+  - {ticker: PGR,  sector: "P&C insurer"}
+  - {ticker: CB,   sector: "P&C insurer"}
+  - {ticker: AIG,  sector: "P&C insurer"}
+  - {ticker: HIG,  sector: "P&C insurer"}
+  - {ticker: CINF, sector: "P&C insurer"}
+  - {ticker: SIGI, sector: "P&C insurer"}
+  - {ticker: WRB,  sector: "P&C insurer"}
+  - {ticker: MKL,  sector: "P&C insurer"}
+  - {ticker: AFG,  sector: "P&C insurer"}
+  - {ticker: CNA,  sector: "P&C insurer"}
+  - {ticker: RLI,  sector: "P&C insurer"}
+  - {ticker: KNSL, sector: "P&C insurer"}
+  - {ticker: AGO,  sector: "P&C insurer"}   # financial guaranty
+  # --- Life & health / retirement insurers ---
+  - {ticker: MET,  sector: "Life insurer"}
+  - {ticker: PRU,  sector: "Life insurer"}
+  - {ticker: LNC,  sector: "Life insurer"}
+  - {ticker: PFG,  sector: "Life insurer"}
+  - {ticker: AFL,  sector: "Life insurer"}
+  - {ticker: UNM,  sector: "Life insurer"}
+  - {ticker: GL,   sector: "Life insurer"}
+  - {ticker: EQH,  sector: "Life insurer"}
+  # --- Insurance brokers ---
+  - {ticker: MRSH, sector: "Insurance broker"}
+  - {ticker: AON,  sector: "Insurance broker"}
+  - {ticker: AJG,  sector: "Insurance broker"}
+  - {ticker: BRO,  sector: "Insurance broker"}
+  - {ticker: WTW,  sector: "Insurance broker"}
+  # --- Banks ---
+  - {ticker: JPM,  sector: "Bank"}
+  - {ticker: BAC,  sector: "Bank"}
+  - {ticker: WFC,  sector: "Bank"}
+  - {ticker: C,    sector: "Bank"}
+  - {ticker: USB,  sector: "Bank"}
+  - {ticker: PNC,  sector: "Bank"}
+  - {ticker: TFC,  sector: "Bank"}
+  - {ticker: COF,  sector: "Bank"}
+  - {ticker: FITB, sector: "Bank"}
+  - {ticker: KEY,  sector: "Bank"}
+  - {ticker: RF,   sector: "Bank"}
+  - {ticker: MTB,  sector: "Bank"}
+  - {ticker: HBAN, sector: "Bank"}
+  - {ticker: CFG,  sector: "Bank"}
+  - {ticker: GS,   sector: "Bank"}
+  - {ticker: MS,   sector: "Bank"}

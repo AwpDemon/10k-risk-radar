@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+HANDOFF.md
+data/cache/
+data/interim/
+*.duckdb
+*.duckdb.wal
+.env
+.streamlit/secrets.toml

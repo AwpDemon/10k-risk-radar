@@ -1,0 +1,15 @@
+,cyber_tech,ai_model,climate_catastrophe,regulatory_legal,market_interest_rate,credit,reserving_underwriting,liquidity_capital,reinsurance,pandemic_health,macro_geopolitical,competition_strategy,operational_people,other
+cyber_tech,2,0,0,0,0,0,0,0,0,0,0,0,0,0
+ai_model,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+climate_catastrophe,0,0,2,1,0,0,0,0,0,0,0,0,0,0
+regulatory_legal,0,0,0,6,0,0,0,0,0,0,0,0,0,2
+market_interest_rate,0,0,0,1,3,0,0,0,0,0,0,0,0,2
+credit,0,0,0,0,0,3,0,0,0,0,0,0,0,0
+reserving_underwriting,0,0,0,1,0,0,1,0,0,0,0,0,0,0
+liquidity_capital,0,0,0,0,0,0,0,6,0,0,0,0,0,0
+reinsurance,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+pandemic_health,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+macro_geopolitical,0,0,0,0,0,0,0,0,0,0,2,0,0,0
+competition_strategy,0,0,0,1,0,0,0,0,1,0,0,12,0,2
+operational_people,1,0,0,0,0,0,0,0,0,0,0,0,6,0
+other,0,0,0,0,0,0,0,0,0,0,0,0,0,3
