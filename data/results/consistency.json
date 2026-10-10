@@ -1,0 +1,14 @@
+{
+  "n": 50,
+  "exact_agreement": 0.98,
+  "cohen_kappa": 0.9775684163301929,
+  "agreement_counting_pass1_secondary": 1.0,
+  "disagreements": [
+    {
+      "rf_id": "0000019617-25-000270-019",
+      "heading": "Maintaining the required level and composition of capital may impact JPMorganChase\u2019s abili",
+      "pass1": "liquidity_capital",
+      "pass2": "regulatory_legal"
+    }
+  ]
+}

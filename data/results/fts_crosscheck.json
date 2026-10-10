@@ -1,0 +1,66 @@
+[
+  {
+    "phrase": "\"artificial intelligence\"",
+    "fiscal_year": 2022,
+    "filings": 44,
+    "efts_any_document": 19,
+    "item1a_extracted": 15,
+    "item1a_but_not_efts": 0
+  },
+  {
+    "phrase": "\"artificial intelligence\"",
+    "fiscal_year": 2023,
+    "filings": 44,
+    "efts_any_document": 38,
+    "item1a_extracted": 31,
+    "item1a_but_not_efts": 0
+  },
+  {
+    "phrase": "\"artificial intelligence\"",
+    "fiscal_year": 2024,
+    "filings": 44,
+    "efts_any_document": 43,
+    "item1a_extracted": 36,
+    "item1a_but_not_efts": 0
+  },
+  {
+    "phrase": "\"artificial intelligence\"",
+    "fiscal_year": 2025,
+    "filings": 44,
+    "efts_any_document": 44,
+    "item1a_extracted": 34,
+    "item1a_but_not_efts": 0
+  },
+  {
+    "phrase": "\"generative AI\"",
+    "fiscal_year": 2022,
+    "filings": 44,
+    "efts_any_document": 0,
+    "item1a_extracted": 0,
+    "item1a_but_not_efts": 0
+  },
+  {
+    "phrase": "\"generative AI\"",
+    "fiscal_year": 2023,
+    "filings": 44,
+    "efts_any_document": 9,
+    "item1a_extracted": 8,
+    "item1a_but_not_efts": 0
+  },
+  {
+    "phrase": "\"generative AI\"",
+    "fiscal_year": 2024,
+    "filings": 44,
+    "efts_any_document": 21,
+    "item1a_extracted": 20,
+    "item1a_but_not_efts": 0
+  },
+  {
+    "phrase": "\"generative AI\"",
+    "fiscal_year": 2025,
+    "filings": 44,
+    "efts_any_document": 24,
+    "item1a_extracted": 22,
+    "item1a_but_not_efts": 0
+  }
+]

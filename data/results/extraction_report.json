@@ -1,0 +1,34 @@
+{
+  "filings": 176,
+  "item1a_located": 176,
+  "success_rate": 1.0,
+  "by_method": {
+    "item1a": 160,
+    "exhibit13": 8,
+    "heading": 8
+  },
+  "by_sector_success": {
+    "Bank": 1.0,
+    "Insurance broker": 1.0,
+    "Life insurer": 1.0,
+    "P&C insurer": 1.0
+  },
+  "section_chars_median": 82653,
+  "section_chars_min": 26445,
+  "risk_factors_total": 5823,
+  "risk_factors_per_filing": {
+    "count": 176.0,
+    "mean": 33.1,
+    "std": 9.0,
+    "min": 16.0,
+    "25%": 27.0,
+    "50%": 32.0,
+    "75%": 38.0,
+    "max": 58.0
+  },
+  "segmentation_style": {
+    "standalone": 5117,
+    "leadin": 592,
+    "typographic": 114
+  }
+}

@@ -1,0 +1,14 @@
+# Local/self-hosted deployment of the read-only explorer (not deployed anywhere yet).
+#   docker compose -f deploy/docker-compose.yml up -d --build
+services:
+  riskradar-app:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
+    ports:
+      - "127.0.0.1:8501:8501"   # bind to loopback; put a reverse proxy / auth in front before exposing
+    read_only: true
+    tmpfs:
+      - /tmp
+      - /home/radar
+    restart: unless-stopped

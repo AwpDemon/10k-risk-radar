@@ -1,0 +1,26 @@
+ticker,fiscal_year,method,accession,start_ok,end_ok,note
+HBAN,2025,item1a,0000049196-26-000015,1,1,
+JPM,2024,item1a,0000019617-25-000270,1,1,trailing page header/footer block inside section (dropped later as noise)
+WFC,2024,exhibit13,0000072971-25-000066,1,1,
+AON,2022,item1a,0001628280-23-004087,1,1,
+WRB,2022,item1a,0000011544-23-000004,1,1,
+AFL,2024,item1a,0000004977-25-000047,1,1,
+GS,2023,item1a,0000886982-24-000006,1,1,trailing page header/footer block inside section (dropped later as noise)
+PNC,2022,item1a,0000713676-23-000020,1,1,
+C,2023,heading,0000831001-24-000033,1,1,
+HIG,2024,item1a,0000874766-25-000023,1,1,trailing page header/footer block inside section (dropped later as noise)
+GL,2022,item1a,0000320335-23-000008,1,1,trailing page header/footer block inside section (dropped later as noise)
+RLI,2025,item1a,0001104659-26-018013,1,1,trailing page header/footer block inside section (dropped later as noise)
+MTB,2025,item1a,0000036270-26-000010,1,1,
+AJG,2024,item1a,0000950170-25-021775,1,1,
+BAC,2023,item1a,0000070858-24-000122,1,1,
+WTW,2022,item1a,0000950170-23-004303,1,1,
+COF,2023,item1a,0000927628-24-000094,1,1,
+GL,2024,item1a,0000320335-25-000013,1,1,trailing page header/footer block inside section (dropped later as noise)
+MKL,2022,item1a,0001096343-23-000033,1,1,
+CFG,2024,item1a,0000759944-25-000013,1,1,
+PNC,2023,item1a,0000713676-24-000028,1,1,
+CFG,2023,item1a,0000759944-24-000039,1,1,
+CB,2023,item1a,0000896159-24-000003,1,1,trailing page header/footer block inside section (dropped later as noise)
+MTB,2023,item1a,0000950170-24-017990,1,1,
+EQH,2022,item1a,0001333986-23-000004,1,1,

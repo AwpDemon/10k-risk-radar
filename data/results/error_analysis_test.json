@@ -1,0 +1,62 @@
+{
+  "model": "zero_shot:qwen2.5:14b-instruct",
+  "n_test": 180,
+  "n_errors": 18,
+  "buckets": {
+    "secondary_hit": 10,
+    "other_error": 5,
+    "flagged_ambiguous": 3
+  },
+  "top_confusions": [
+    {
+      "gold": "competition_strategy",
+      "pred": "other",
+      "n": 2
+    },
+    {
+      "gold": "other",
+      "pred": "market_interest_rate",
+      "n": 2
+    },
+    {
+      "gold": "credit",
+      "pred": "market_interest_rate",
+      "n": 1
+    },
+    {
+      "gold": "competition_strategy",
+      "pred": "market_interest_rate",
+      "n": 1
+    },
+    {
+      "gold": "liquidity_capital",
+      "pred": "credit",
+      "n": 1
+    },
+    {
+      "gold": "liquidity_capital",
+      "pred": "regulatory_legal",
+      "n": 1
+    },
+    {
+      "gold": "macro_geopolitical",
+      "pred": "market_interest_rate",
+      "n": 1
+    },
+    {
+      "gold": "cyber_tech",
+      "pred": "competition_strategy",
+      "n": 1
+    },
+    {
+      "gold": "macro_geopolitical",
+      "pred": "regulatory_legal",
+      "n": 1
+    },
+    {
+      "gold": "market_interest_rate",
+      "pred": "other",
+      "n": 1
+    }
+  ]
+}
