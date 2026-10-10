@@ -1,2 +1,0 @@
-[console_scripts]
-riskradar = riskradar.cli:main

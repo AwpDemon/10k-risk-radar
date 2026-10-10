@@ -9,3 +9,4 @@ data/interim/
 *.duckdb.wal
 .env
 .streamlit/secrets.toml
+*.egg-info/

@@ -1,7 +1,0 @@
-Metadata-Version: 2.4
-Name: riskradar
-Version: 0.1.0
-Summary: 10-K Risk Radar: extract, classify, and diff Item 1A risk factors from SEC EDGAR filings with LLMs, with an evaluation harness.
-License: MIT
-Requires-Python: >=3.11
-Description-Content-Type: text/markdown
