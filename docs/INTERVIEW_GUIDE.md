@@ -240,8 +240,9 @@ guidelines, written after looking at dev errors). 14B few-shot dev macro-F1 0.83
 ### 4.6 Cost and latency
 - Local GPU (RTX 4080, Ollama) so the API bill is $0; the real costs are GPU time and
   tokens. Zero-shot 14B: ~1.9k prompt + ~60 completion tokens per risk factor, ~33 risk
-  factors per filing -> roughly 65k tokens per filing. See `data/results/classify_run.json`
-  for measured corpus throughput.
+  factors per filing -> roughly 65k tokens per filing (11.5M tokens for the corpus).
+  Measured: 4,535 uncached classifications in 39.5 minutes (1.9/s with 4 concurrent
+  requests), about 17 seconds per filing (`data/results/classify_run.json`).
 - To price it on a hosted API: tokens per filing x the provider's per-token price. Prompt
   caching would cut cost a lot because the 1.9k-token system prompt is identical for
   every call.
@@ -256,14 +257,23 @@ will always return a number; whether the number means anything needs its own eva
 
 ## 5. Findings and how to present them
 
-(Exact values in `data/results/insights_summary.json`, `fts_crosscheck.csv`.)
-- **AI-risk disclosure spread fast.** Per SEC full-text search, the share of the 44
-  companies whose 10-K mentions "artificial intelligence" went from 19/44 (FY2022) to
-  44/44 (FY2025); "generative AI" from 0 to 24. Inside the Item 1A text I extracted, the
-  counts are 15 -> 34 and 0 -> 22, and every Item 1A mention is also an EFTS hit (no
-  contradictions) - an independent check that extraction isn't inventing the trend.
-- See the README for the LLM-classified view (filings with at least one AI-related risk
-  factor by sector), cyber share of risk-factor text, and new risk factors by category.
+(Exact values in `data/results/insights_summary.json` and `fts_crosscheck.csv`.)
+- **Dedicated AI risk factors** (a risk factor whose *heading* names AI, machine learning or
+  generative AI): 0 of 44 companies in FY2022, 9 in FY2023, 16 in FY2024, **27 in FY2025**.
+  Banks lead (12 of 16 in FY2025). AI mentioned anywhere in Item 1A: 15 -> 34 -> 44 -> 44.
+- **Independent check with SEC full-text search** over the whole filing: "artificial
+  intelligence" 19 -> 38 -> 43 -> 44 companies; "generative AI" 0 -> 9 -> 21 -> 24. Every
+  Item 1A mention my pipeline found is also an EFTS hit, so extraction isn't inventing it.
+- **Cyber/technology** risk factors grew from 20.2% to 24.8% of Item 1A text on average
+  (brokers 23% -> 36%).
+- **Year over year**: ~40-50 genuinely new risk factors a year across 44 companies; a
+  spot-check of 25 "new" flags found 21 truly new, 2 reworded, 2 uncertain.
+- **A lesson worth telling:** I first measured AI with the LLM's `ai_related` flag and got
+  "82% of filings already had AI risk in FY2022" - which smelled wrong. Comparing the flag
+  with explicit AI wording over all 5,823 risk factors showed 125 flagged items with no AI
+  wording at all (mostly generic *model risk*). So the headline uses a transparent wording
+  rule, and the LLM is used where it is validated (the 14-class category). Interviewers
+  love this: *a plausible-looking number from an LLM that didn't survive a sanity check.*
 - **Framing:** "This measures what companies *say*, not what happens to them."
 
 ---

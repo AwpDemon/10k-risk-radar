@@ -1,0 +1,9 @@
+{
+  "n": 25,
+  "truly_new": 21,
+  "reworded": 2,
+  "uncertain": 2,
+  "precision_strict": 0.84,
+  "precision_lenient": 0.92,
+  "method": "random 25 of 131 rows labeled new (seed 3); each compared with its nearest prior-year risk factor heading by a human-style read"
+}

@@ -16,6 +16,6 @@ filings = pd.read_parquet(config.INTERIM / "filings.parquet")[["accession", "url
 out = (df.merge(d, on="rf_id", how="left").merge(filings, on="accession", how="left")
        .assign(excerpt=lambda x: x.body.str.slice(0, 400)))
 cols = ["rf_id", "accession", "ticker", "company", "sector", "fiscal_year", "group", "heading", "excerpt",
-        "primary", "secondary", "severity", "is_ai", "is_cyber", "is_climate", "change", "n_chars", "url"]
+        "primary", "secondary", "severity", "is_ai", "ai_heading", "is_cyber", "is_climate", "change", "n_chars", "url"]
 out[cols].to_parquet(config.SAMPLE / "explorer.parquet", index=False, compression="zstd")
 print(len(out), "rows ->", config.SAMPLE / "explorer.parquet")

@@ -1,0 +1,77 @@
+{
+  "filings_per_year": {
+    "2022": 44,
+    "2023": 44,
+    "2024": 44,
+    "2025": 44
+  },
+  "filings_with_ai_heading": {
+    "2022": 0,
+    "2023": 9,
+    "2024": 16,
+    "2025": 27
+  },
+  "filings_with_ai_anywhere_in_item1a": {
+    "2022": 15,
+    "2023": 34,
+    "2024": 44,
+    "2025": 44
+  },
+  "filings_with_llm_ai_related_rf": {
+    "2022": 10,
+    "2023": 32,
+    "2024": 44,
+    "2025": 44
+  },
+  "ai_heading_risk_factors": {
+    "2023": 9,
+    "2024": 18,
+    "2025": 30
+  },
+  "ai_heading_primary_category": {
+    "ai_model": 41,
+    "cyber_tech": 10,
+    "competition_strategy": 3,
+    "regulatory_legal": 3
+  },
+  "llm_ai_flag_vs_ai_wording": {
+    "both": 339,
+    "flag_only": 125,
+    "wording_only": 116,
+    "neither": 5243
+  },
+  "cyber_text_share_all_years": {
+    "2022": 0.202,
+    "2023": 0.214,
+    "2024": 0.2278,
+    "2025": 0.2481
+  },
+  "change_counts": {
+    "2023": {
+      "expanded": 100,
+      "modified": 564,
+      "new": 40,
+      "removed": 51,
+      "unchanged": 742
+    },
+    "2024": {
+      "expanded": 47,
+      "modified": 612,
+      "new": 41,
+      "removed": 35,
+      "unchanged": 752
+    },
+    "2025": {
+      "expanded": 69,
+      "modified": 578,
+      "new": 50,
+      "removed": 34,
+      "unchanged": 771
+    }
+  },
+  "new_ai_related": {
+    "2023": 8,
+    "2024": 10,
+    "2025": 13
+  }
+}

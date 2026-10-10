@@ -52,23 +52,23 @@ if q:
 tab1, tab2, tab3, tab4 = st.tabs(["Trends", "Explore risk factors", "Year-over-year changes", "Evaluation"])
 
 with tab1:
-    per = f.groupby(["accession", "sector", "fiscal_year"]).agg(ai=("is_ai", "any")).reset_index()
+    per = f.groupby(["accession", "sector", "fiscal_year"]).agg(ai=("ai_heading", "any")).reset_index()
     c1, c2 = st.columns(2)
     with c1:
-        st.subheader("Filings with an AI-related risk factor")
+        st.subheader("Filings with a dedicated AI risk factor")
         st.line_chart(per.pivot_table(index="fiscal_year", columns="sector", values="ai", aggfunc="mean") * 100,
                       y_label="% of filings")
     with c2:
         st.subheader("Risk factors per category")
         mix = f.groupby(["fiscal_year", "primary"]).size().unstack(fill_value=0)
         st.bar_chart(mix, y_label="risk factors")
-    st.caption("Shares are per filing: a filing counts once if any of its risk factors is AI-related "
-               "(primary/secondary category ai_model or the model's ai_related flag).")
+    st.caption("Per filing: a filing counts once if any risk factor's heading names AI "
+               "(artificial intelligence, AI, machine learning, generative AI).")
 
 with tab2:
     st.write(f"{len(f):,} risk factors match the filters.")
     show = f[["ticker", "fiscal_year", "primary", "secondary", "change", "heading"]].sort_values(["ticker", "fiscal_year"])
-    st.dataframe(show, use_container_width=True, height=420, hide_index=True)
+    st.dataframe(show, width="stretch", height=420, hide_index=True)
     pick = st.selectbox("Read one", show.index, format_func=lambda i: f"{df.at[i, 'ticker']} {df.at[i, 'fiscal_year']}: {df.at[i, 'heading'][:90]}")
     if pick is not None:
         r = df.loc[pick]

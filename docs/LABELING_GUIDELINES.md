@@ -68,6 +68,23 @@ See `src/riskradar/taxonomy.py` for the machine-readable version; the table in
 14. **When torn between two**, pick the one the heading's grammatical subject names and put
     the other in `secondary`; write a `note`.
 
+### Clarifications added during labeling (v1.1)
+
+These came up repeatedly in the first ~100 items and were then applied to every item
+(the `note` column records the hard calls):
+
+15. **Accounting estimates, valuation judgments, credit-loss allowance methodology, goodwill
+    impairment, dividend policy** -> `other` (the driver is management judgment / reporting),
+    with the economic topic as `secondary`. **Changes in accounting standards** imposed by
+    FASB/SEC -> `regulatory_legal`.
+16. **Intellectual property** (protection or infringement claims) -> `competition_strategy`.
+17. **ESG / sustainability scrutiny** -> `climate_catastrophe` (the taxonomy groups
+    climate and ESG pressure); reputation-only framing -> `competition_strategy`.
+18. **Pension obligations / plan assets, FX translation, mark-to-market** -> `market_interest_rate`.
+19. **Technology change, digital capability, IT systems** -> `cyber_tech`; enterprise
+    risk-management frameworks, internal controls, business continuity -> `operational_people`.
+20. **Resolution regimes / loss absorption by security holders (TLAC)** -> `regulatory_legal`.
+
 ## Worked examples (paraphrased headings)
 
 | heading (paraphrased) | primary | secondary | why |

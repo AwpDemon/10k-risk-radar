@@ -1,0 +1,9 @@
+{
+  "model": "qwen2.5:14b-instruct",
+  "n_items": 5823,
+  "new_calls": 4535,
+  "workers": 4,
+  "wall_seconds": 2370.477271199925,
+  "items_per_second": 1.9131168457499714,
+  "n_filings": 176
+}
