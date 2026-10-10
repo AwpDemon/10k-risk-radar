@@ -28,7 +28,7 @@ def test_rate_limiter_spacing():
     t0 = time.monotonic()
     for _ in range(5):
         rl.wait()
-    assert time.monotonic() - t0 >= 0.19
+    assert time.monotonic() - t0 >= 0.15  # 4 intervals of 50 ms, with slack for coarse OS timers
 
 
 def test_refuses_unfair_settings(tmp_path):

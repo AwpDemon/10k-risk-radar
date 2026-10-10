@@ -77,7 +77,7 @@ class EdgarClient:
         if use_cache and path.exists():
             return gzip.decompress(path.read_bytes())
         delay = 1.0
-        for attempt in range(6):
+        for _attempt in range(6):
             self.limiter.wait()
             self.network_requests += 1
             resp = self.session.get(url, timeout=60)

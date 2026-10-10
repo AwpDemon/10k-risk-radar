@@ -13,7 +13,7 @@ DEV_PER_SECTOR = 15
 
 rf = pd.read_parquet(config.INTERIM / "risk_factors.parquet")
 parts = []
-for sector, g in rf.groupby("sector"):
+for _sector, g in rf.groupby("sector"):
     s = g.sample(PER_SECTOR, random_state=SEED).copy()
     s["split"] = ["dev"] * DEV_PER_SECTOR + ["test"] * (PER_SECTOR - DEV_PER_SECTOR)
     parts.append(s)
